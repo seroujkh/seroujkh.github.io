@@ -1,0 +1,718 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: "Poppins";
+}
+
+/* navbar */
+
+header .logo {
+    height: 100px;
+    width: 100px;
+    transition: .5s;
+
+}
+
+header nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 9999;
+    padding: 10px 50px !important;
+}
+header nav.scrolled.navbar {
+    height: 75px;
+}
+header nav.navbar li a {
+    color: white;
+}
+
+ul.nav-row {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul.nav-row li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul.nav-row li {
+    margin-right: 40px;
+}
+
+svg.navbar-insta-icon {
+    transform: scale(1.6) translateY(1px);
+}
+
+.heading-section {
+    height: 100vh;
+    padding-top: 130px;
+    overflow: hidden;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(212deg, rgba(2, 0, 36, 1) 0%, rgba(32, 99, 155, 1) 47%, rgba(0, 212, 255, 1) 100%);
+}
+
+.heading-section .main-phone {
+    width: 400px;
+
+}
+
+nav ul.nav-row li a {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+}
+nav ul.nav-row li a:hover {
+color: gray;
+text-decoration: unset;
+}
+nav.navbar .logo-title {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 3.5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+
+}
+nav.navbar .logo-title:hover {
+    text-decoration: none;
+}
+nav.navbar.scrolled .logo {
+    height: 75px;
+    width: 75px;
+}
+
+nav.navbar {
+    transition: .5s;
+    /* height: 100px; */
+}
+
+nav.navbar.scrolled {
+    background-color: white;
+    /* height: 75px; */
+}
+
+nav.navbar.scrolled .logo-title {
+    color: #122c9b;
+}
+
+nav.navbar.scrolled li a {
+    color: #282828;
+}
+
+nav.navbar.scrolled svg.navbar-insta-icon path {
+    fill: #282828 !important;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#home::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 9;
+}
+#home {
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/bg-1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home h1 {
+    color: white;
+    line-height: 1.75;
+    font-family: "Poppins";
+    font-size: 35px;
+}
+.pos-z {
+    position: relative;
+    z-index: 10;
+}
+.block-left,.block-right {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    vertical-align: top;
+    margin-right: 15px;
+}
+.block-right  {
+    vertical-align: top;
+    margin-right: 0;
+    margin-left: 15px;
+    transform: rotate(180deg);
+}
+.myname:before{
+    content: "";
+    width: 40px;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 30px;
+    vertical-align: middle;
+    height: 2px;
+    display: inline-block;
+}
+.myname {
+    color: white;
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 3.5px;
+}
+
+.header1:before, .header1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    margin-right: 20px;
+}
+.header1:after {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.font-0 {
+    font-size: 0;
+}
+#about h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+#about p {
+    font-size: 18px;
+    font-family: "Chivo";
+    font-weight: 600;
+}
+#about .hello {
+    display: inline-block;
+    font-size: 30px;
+    font-family: "Poppins";
+    line-height: 1;
+    vertical-align: middle;
+    font-weight: 600;
+
+}
+#about h1 .role {
+    margin-top: 15px;
+    font-size: 18px; display: block;
+    font-family: "Chivo";
+}
+#about div.line{
+    content: "";
+    width: 300px;
+    background-color: black;
+    margin-left: 10px;
+    vertical-align: middle;
+    height: 2px;
+    display: inline-block;
+}
+.sub-heading {
+    color: #6c757d !important;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-family: 'Kaushan Script', cursive !important;
+ 
+}
+.circle-box {
+    width: 125px;
+    height: 125px;
+    display: inline-block;
+    background-color: #122c9b;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle-box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.circle-box span i {
+    color: white !important;
+    font-size: 50px;
+    line-height: 1;
+}
+.features-circles h1 {
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+.features-circles p {
+    font-family: 'Chivo';
+    text-align: center;
+
+}
+.heading {
+    font-size: 40px !important;
+}
+.skill-single {
+    width: 100%;
+}
+.skill-medium {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+
+.burger-wrapper a, .burger-wrapper .burger-menu {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+
+
+.burger-menu {
+    position: relative;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    height: 21px;
+    width: 30px;
+    margin-right: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    opacity: 1;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.burger-menu div:nth-child(1) {
+    top: 0;
+    transform: translate(0, 0);
+}
+
+.burger-menu div:nth-child(2) {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.burger-menu div:nth-child(3) {
+    bottom: 0;
+    transform: translate(0, 0);
+}
+
+.burger-menu.open div:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.burger-menu.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.open div:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+
+.burger-menu div.scrollUp {
+    background: rgb(18, 44, 155);;
+}
+
+.burger-wrapper {
+    display: block;
+}
+
+.burger-wrapper a svg {
+    height: 22px;
+}
+
+.navbar.scrolled .burger-menu div {
+    background: rgb(18, 44, 155)!important;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display:none;
+    transition: 1s;
+    transform: translateX(125%);
+    background: white !important;
+}
+.mobile-menu.load {
+    display:block !important;
+}
+
+
+.mobile-menu.op {
+    transform: translateX(0%);
+
+}
+
+.mobile-menu .nav-row,
+.mobile-menu .nav-row li {
+    display: block !important;
+}
+
+.mobile-menu .nav-row li a {
+    color: rgb(18, 44, 155);;
+    font-family: "Poppins";
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.mobile-menu .nav-row li {
+    transform: translateX(150%);
+    transition: 2s;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+.mobile-menu .nav-row li.go-left {
+    transform: translateX(0);
+}
+
+[animate] {
+    transition: all 1.0s 0.5s;
+    opacity: 0;
+}
+
+[animate].show {
+    opacity: 1;
+}
+
+
+[animate="left"] {
+    transform: translateX(100px)
+}
+[animate="left"].show {
+    transform: translateX(0)
+}
+[animate="right"] {
+    transform: translateX(-100px)
+}
+[animate="right"].show {
+    transform: translateX(0)
+}
+[animate="up"] {
+    transform: translateY(20px)
+}
+
+[animate="up"].show {
+    transform: translateY(0)
+}
+
+.startup-box {
+    width: 300px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+.startup-about {
+    display: inline-block;
+}
+.startup-box  img {
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+transition: .5s;
+height: 100%;
+width: 100%;
+}
+.startup-box:hover  img  {
+transform: scale(1.2);
+}
+.startup-about h1 {
+    font-family: "Poppins";
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+.startup-about p {
+    font-family: "Chivo";
+    font-size: 18px;
+}
+.s-link {
+    color: #282828;
+}
+.s-link:hover {
+    text-decoration: none;
+    color: #282828;
+}
+.startup-about .startup-btn {
+    background-color: white;
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    transition: .5s;
+    display: inline-block;
+    border: 1px solid white;
+}
+.startup-about .startup-btn span{
+    position: absolute;
+    width: 100%;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Chivo";
+    font-size: 16px;
+    color: white;
+}
+#punig .startup-btn {
+    background-color: #fed136 ;
+    border: 1px solid #fed136 ;
+}
+
+
+#morsecodeacademy .startup-btn {
+    background-color: #20639a;
+    border: 1px solid #20639a;
+}
+.startup-btn:hover {
+    opacity: 0.7;
+}
+.social-icons ul {
+    list-style: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.social-icons ul li {
+    display: inline-block;
+}
+h1.me {
+    font-size: 25px;
+    font-weight: 700;
+}
+.social-icons  a {
+    font-size: 23px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529;
+    position: relative;
+    transition: .5s;
+    text-align: center;
+}
+.social-icons  i {
+position: absolute;
+left: 50%;
+top: 50%;
+width: 100%;
+transform: translate(-50%,-50%);
+}
+.social-icons a.ig:hover {
+    border-color: #FE1F49;
+    background-color: #FE1F49;
+}
+
+.social-icons a.yt:hover {
+    border-color: #bb0000;
+    background-color: #bb0000;
+}
+
+
+.me-wrapper {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative !important;
+    border: 7px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.me-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.social-icons a.li:hover {
+    border-color: #0077b5;
+    background-color: #0077b5;
+}
+
+.copyright {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 3.5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #122c9b;
+}
+.hellotree{
+    color: #fed900;
+    transition: .5s;
+}
+.hellotree:hover {
+    color: #122c9b;
+    text-decoration: none;
+}
+
+@media (max-width: 1199.98px) {
+    .mobile-menu .nav-row li a {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1100.98px) {}
+
+
+@media (max-width: 991.98px) {
+    .mobile-menu .nav-row li a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .mobile-menu .nav-row li a {
+        font-size: 18px;
+    }
+    .block-left, .block-right {
+        height: 10px;
+        width: 10px;
+        margin-top: 8px;
+    }
+    .block-left {
+        margin-right: 8px;
+    }
+    .block-right {
+        margin-left:8px;
+    }
+.myname {
+    display: block;
+    font-size: 18px;
+}
+.myname:before {
+    margin-left: 0px;
+    width: 30px;
+    height: 1px;
+}
+    header nav.navbar {
+        padding: 10px 0px !important
+    }
+
+    nav.navbar .logo-title {
+        font-size: 13px;
+    }
+    #home h1 {
+        font-size: 25px;
+    }
+    #about .hello  {
+        font-size: 20px;
+    }
+    #about div.line {
+        width: 150px;
+    }
+    #about h1,.startup-about h1  { 
+        font-size: 25px;
+    }
+    #about h1 .role,#about p { 
+        font-size: 16px;
+    }
+    .heading { 
+        font-size: 30px !important;
+    }
+    .sub-heading { 
+        font-size: 12px;    
+    }
+    .circle-box {
+width: 100px;
+height: 100px;
+    }
+    .features-circles h1 {
+font-size: 18px;
+    }
+    .features-circles p,.startup-about p { 
+font-size: 16px;
+    }
+    .startup-box {
+width: 250px;
+height: 200px;
+    }
+    .startup-about .startup-btn {
+width: 120px;
+height: 40px;
+    }
+    .startup-about .startup-btn span,.copyright {
+font-size: 13px;
+    }
+    .me-wrapper {
+height: 150px;
+width: 150px;
+    }
+    h1.me {
+        font-size: 20px;
+    }
+}
